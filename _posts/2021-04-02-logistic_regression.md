@@ -1089,7 +1089,7 @@ plt.show()
     'c' argument looks like a single numeric RGB or RGBA sequence, which should be avoided as value-mapping will have precedence in case its length matches with 'x' & 'y'.  Please use a 2-D array with a single row if you really want to specify the same RGB or RGBA value for all points.
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/_posts/logistic_regression_files/logistic_regression_24_1.png" alt="linearly separable data">
+<img src="{{ site.url }}{{ site.baseurl }}/_posts/logistic_regression_files/logistic_regression_24_1.png">
 
 
 
@@ -1119,5 +1119,5 @@ plt.show()
     'c' argument looks like a single numeric RGB or RGBA sequence, which should be avoided as value-mapping will have precedence in case its length matches with 'x' & 'y'.  Please use a 2-D array with a single row if you really want to specify the same RGB or RGBA value for all points.
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/_posts/logistic_regression_files/logistic_regression_26_1.png" alt="linearly separable data">
+<img src="{{ site.url }}{{ site.baseurl }}/_posts/logistic_regression_files/logistic_regression_26_1.png">
 
