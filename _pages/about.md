@@ -5,6 +5,4 @@ header:
   image: "/images/zakim.jpg"
 ---
 
-I'm a senior data scientist who excels at data wrangling, machine learning, exploratory analysis, and data visualizations.
-
-Etc, etc, etc
+I am a data enthusiast with 4+ years of experience executing data-driven solution to increase efficiency, accuracy and utility of internal data processing. Experienced at creating data models and using machine learning algorithms to deliver insights and implement action-oriented solution to complex business problems.
