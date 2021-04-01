@@ -1,5 +1,5 @@
 ---
-title: "Data Wrangling Project"
+title: "Logistic Regression Project"
 date: 2021-04-02
 tags: [data wrangling, data science, logistic regression]
 header:
