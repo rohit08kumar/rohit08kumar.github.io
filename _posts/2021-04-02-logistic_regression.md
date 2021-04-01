@@ -1,3 +1,13 @@
+---
+title: "Data Wrangling Project"
+date: 2021-04-02
+tags: [data wrangling, data science, logistic regression]
+header:
+  image: "/images/perceptron/percept.jpg"
+excerpt: "Data Wrangling, Data Science, Logistic Regression"
+mathjax: "true"
+---
+
 # Logistic Regression
 
 Here we are trying to run Logistic Regression and analysing the output of our model.
