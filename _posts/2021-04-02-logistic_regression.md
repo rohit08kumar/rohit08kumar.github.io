@@ -3,7 +3,7 @@ title: "Logistic Regression Project"
 date: 2021-04-02
 tags: [data wrangling, data science, logistic regression]
 header:
-  image: "/images/perceptron/percept.jpg"
+  image: "/images/perceptron/Logistic_cover.png"
 excerpt: "Data Wrangling, Data Science, Logistic Regression"
 mathjax: "true"
 ---
