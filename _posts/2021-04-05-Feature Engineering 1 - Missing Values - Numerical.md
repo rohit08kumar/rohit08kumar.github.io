@@ -3,7 +3,7 @@ title: "Feature Engineering 1 - Missing values - Numerical"
 date: 2021-04-05
 tags: [data science, Feature Engineering, messy data]
 header:
-  image: "/images/perceptron/Feature_engineering.jpeg"
+  image: "/images/Feature_engineering.jpeg"
 excerpt: "Data Science, Feature Engineering, Messy Data"
 mathjax: "true"
 ---
