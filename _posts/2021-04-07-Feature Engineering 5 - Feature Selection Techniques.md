@@ -1,3 +1,15 @@
+---
+title: "Feature Engineering 5 - Feature Selection Techniques"
+date: 2021-04-07
+tags: [data science, Feature Engineering, messy data]
+header:
+  image: "/images/Feature_engineering.jpeg"
+excerpt: "Data Science, Feature Engineering, Messy Data"
+mathjax: "true"
+---
+
+
+
 # Feature Selection Techniques
 
 - To reduce the dimensions in models
@@ -719,7 +731,7 @@ sns.barplot(x='Score',y='Feature',data=ranked_features.sort_values(['Score'],asc
 
 
 
-![png](Feature%20Engineering%205%20-%20Feature%20Selection%20Techniques_files/Feature%20Engineering%205%20-%20Feature%20Selection%20Techniques_19_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 5 - Feature Selection Techniques_files/Feature Engineering 5 - Feature Selection Techniques_19_1.png" alt="linearly separable data">
 
 
 ## 3. Correlation
@@ -1300,8 +1312,7 @@ sns.heatmap(corr,annot=True)
 
 
 
-
-![png](Feature%20Engineering%205%20-%20Feature%20Selection%20Techniques_files/Feature%20Engineering%205%20-%20Feature%20Selection%20Techniques_22_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 5 - Feature Selection Techniques_files/Feature Engineering 5 - Feature Selection Techniques_22_1.png" alt="linearly separable data">
 
 
 

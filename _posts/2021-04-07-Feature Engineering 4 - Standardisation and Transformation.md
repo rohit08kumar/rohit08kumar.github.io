@@ -1,3 +1,15 @@
+---
+title: "Feature Engineering 4 - Standardisation and Transformation"
+date: 2021-04-07
+tags: [data science, Feature Engineering, messy data]
+header:
+  image: "/images/Feature_engineering.jpeg"
+excerpt: "Data Science, Feature Engineering, Messy Data"
+mathjax: "true"
+---
+
+
+
 ### Transformation of Variable
 
 * Why transformation of features are required?
@@ -12,12 +24,12 @@
             - P1 = (.03,0.7)
               P2 = (.02,0.5)  
         - It enchances the performance of model
-    3. Deep Learning 
-        
+    3. Deep Learning
+
      - ANN --> Global Minima,Gradient Descent, Back propogation
      - CNN
      - RNN
-       
+
 
 
 ### Types of Transformations :-
@@ -292,8 +304,7 @@ plt.hist(df1_scaled[:,2],bins=20)
 
 
 
-
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_11_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_11_1.png" alt="linearly separable data">
 
 
 
@@ -316,7 +327,7 @@ plt.hist(df1_scaled[:,3],bins=20)
 
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_12_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_12_1.png" alt="linearly separable data">
 
 
 * the above graph is right skewed
@@ -554,7 +565,7 @@ plt.hist(df_minmax['Pclass'],bins=20)
 
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_21_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_21_1.png" alt="linearly separable data">
 
 
 
@@ -574,7 +585,7 @@ plt.hist(df_minmax['Age'],bins=20)
 
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_22_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_22_1.png" alt="linearly separable data">
 
 
 
@@ -594,7 +605,7 @@ plt.hist(df_minmax['Fare'],bins=20)
 
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_23_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_23_1.png" alt="linearly separable data">
 
 
 ## 3. Robust Scaler
@@ -822,7 +833,7 @@ plt.hist(df3_robust_scaled['Pclass'],bins=20)
 
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_31_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_31_1.png" alt="linearly separable data">
 
 
 
@@ -845,7 +856,7 @@ plt.hist(df3_robust_scaled['Age'],bins=20)
 
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_32_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_32_1.png" alt="linearly separable data">
 
 
 
@@ -868,7 +879,7 @@ plt.hist(df3_robust_scaled['Fare'],bins=20)
 
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_33_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_33_1.png" alt="linearly separable data">
 
 
 ## 4. Gaussian Transformation
@@ -989,7 +1000,7 @@ def plot_data(df,feature):
     plt.subplot(1,2,2)
     stat.probplot(df[feature],dist='norm',plot=pylab)
     plt.show()
-    
+
 ```
 
 
@@ -998,7 +1009,7 @@ plot_data(df4,'Age')
 ```
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_42_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_42_0.png" alt="linearly separable data">
 
 
 * In right figurte (QQ Plot) The data (on Y-axis) should fall on straight line if it is normally distributed or follow Gaussian distribution.
@@ -1012,7 +1023,7 @@ plot_data(df4,'Age_log')
 ```
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_45_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_45_0.png" alt="linearly separable data">
 
 
 * As we can see log transformation didn't worked well in this case
@@ -1026,7 +1037,7 @@ plot_data(df4,'Age_reciprocal')
 ```
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_48_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_48_0.png" alt="linearly separable data">
 
 
 ### 4c. Square Root Transformation
@@ -1042,7 +1053,7 @@ plot_data(df4,'Age_sq_root')
 ```
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_51_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_51_0.png" alt="linearly separable data">
 
 
 ### 4d. Exponential Transformation
@@ -1059,7 +1070,7 @@ exp(df4.Age)
 
     <ipython-input-86-195cdc59ab32> in <module>
     ----> 1 exp(df4.Age)
-    
+
 
     NameError: name 'exp' is not defined
 
@@ -1075,7 +1086,7 @@ plot_data(df4,'Age_exponential')
 ```
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_55_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_55_0.png" alt="linearly separable data">
 
 
 ### 4e. Box-Cox Transformation
@@ -1110,7 +1121,7 @@ plot_data(df4,'Age_boxcox')
 ```
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_59_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_59_0.png" alt="linearly separable data">
 
 
 * Notes :-
@@ -1125,7 +1136,7 @@ plot_data(df4,'Fare')
 ```
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_61_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_61_0.png" alt="linearly separable data">
 
 
 
@@ -1135,7 +1146,7 @@ plot_data(df4,'Fare_log')
 ```
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_62_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_62_0.png" alt="linearly separable data">
 
 
 
@@ -1145,7 +1156,7 @@ plot_data(df4,'Fare_boxcox')
 ```
 
 
-![png](Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_files/Feature%20Engineering%204%20-%20Standardisation%20and%20Transformation_63_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 4 - Standardisation and Transformation_files/Feature Engineering 4 - Standardisation and Transformation_63_0.png" alt="linearly separable data">
 
 
 

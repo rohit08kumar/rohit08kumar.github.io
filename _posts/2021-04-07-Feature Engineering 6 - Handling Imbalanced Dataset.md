@@ -1,3 +1,14 @@
+---
+title: "Feature Engineering 6 - Handling Imbalanced Dataset"
+date: 2021-04-07
+tags: [data science, Feature Engineering, messy data]
+header:
+  image: "/images/Feature_engineering.jpeg"
+excerpt: "Data Science, Feature Engineering, Messy Data"
+mathjax: "true"
+---
+
+
 # Handling Imbalanced Datasets
 
 
@@ -323,7 +334,7 @@ clf.fit(X_train,y_train)
       category=UserWarning
     /opt/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/_logistic.py:765: ConvergenceWarning: lbfgs failed to converge (status=1):
     STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
+
     Increase the number of iterations (max_iter) or scale the data as shown in:
         https://scikit-learn.org/stable/modules/preprocessing.html
     Please also refer to the documentation for alternative solver options:
@@ -353,18 +364,18 @@ print('\naccuracy_score\n',accuracy_score(y_test,y_pred))
     confusion_matrix
      [[85262    34]
      [   53    94]]
-    
+
     classification_report
                    precision    recall  f1-score   support
-    
+
                0       1.00      1.00      1.00     85296
                1       0.73      0.64      0.68       147
-    
+
         accuracy                           1.00     85443
        macro avg       0.87      0.82      0.84     85443
     weighted avg       1.00      1.00      1.00     85443
-    
-    
+
+
     accuracy_score
      0.9989817773252344
 
@@ -408,18 +419,18 @@ print('\naccuracy_score\n',accuracy_score(y_test,y_pred))
     confusion_matrix
      [[85289     7]
      [   34   113]]
-    
+
     classification_report
                    precision    recall  f1-score   support
-    
+
                0       1.00      1.00      1.00     85296
                1       0.94      0.77      0.85       147
-    
+
         accuracy                           1.00     85443
        macro avg       0.97      0.88      0.92     85443
     weighted avg       1.00      1.00      1.00     85443
-    
-    
+
+
     accuracy_score
      0.9995201479348805
 
@@ -509,18 +520,18 @@ print('\naccuracy_score\n',accuracy_score(y_test,y_pred))
     confusion_matrix
      [[62817 22479]
      [    8   139]]
-    
+
     classification_report
                    precision    recall  f1-score   support
-    
+
                0       1.00      0.74      0.85     85296
                1       0.01      0.95      0.01       147
-    
+
         accuracy                           0.74     85443
        macro avg       0.50      0.84      0.43     85443
     weighted avg       1.00      0.74      0.85     85443
-    
-    
+
+
     accuracy_score
      0.7368186978453471
 
@@ -576,18 +587,18 @@ print('\naccuracy_score\n',accuracy_score(y_test,y_pred))
     confusion_matrix
      [[85290     6]
      [   33   114]]
-    
+
     classification_report
                    precision    recall  f1-score   support
-    
+
                0       1.00      1.00      1.00     85296
                1       0.95      0.78      0.85       147
-    
+
         accuracy                           1.00     85443
        macro avg       0.97      0.89      0.93     85443
     weighted avg       1.00      1.00      1.00     85443
-    
-    
+
+
     accuracy_score
      0.9995435553526912
 
@@ -641,18 +652,18 @@ print('\naccuracy_score\n',accuracy_score(y_test,y_pred))
     confusion_matrix
      [[85283    13]
      [   27   120]]
-    
+
     classification_report
                    precision    recall  f1-score   support
-    
+
                0       1.00      1.00      1.00     85296
                1       0.90      0.82      0.86       147
-    
+
         accuracy                           1.00     85443
        macro avg       0.95      0.91      0.93     85443
     weighted avg       1.00      1.00      1.00     85443
-    
-    
+
+
     accuracy_score
      0.9995318516437859
 
@@ -691,18 +702,18 @@ print('\naccuracy_score\n',accuracy_score(y_test,y_pred))
     confusion_matrix
      [[82902  2394]
      [   16   131]]
-    
+
     classification_report
                    precision    recall  f1-score   support
-    
+
                0       1.00      0.97      0.99     85296
                1       0.05      0.89      0.10       147
-    
+
         accuracy                           0.97     85443
        macro avg       0.53      0.93      0.54     85443
     weighted avg       1.00      0.97      0.98     85443
-    
-    
+
+
     accuracy_score
      0.9717940615381014
 

@@ -1,3 +1,14 @@
+---
+title: "Feature Engineering 7 - Outliers and Its impact on ML usecases"
+date: 2021-04-07
+tags: [data science, Feature Engineering, messy data]
+header:
+  image: "/images/Feature_engineering.jpeg"
+excerpt: "Data Science, Feature Engineering, Messy Data"
+mathjax: "true"
+---
+
+
 # Outliers and Its impact on Machine Learning!!
 
 ## What is an outlier?
@@ -212,9 +223,7 @@ sns.distplot(df.Age.dropna())
     <matplotlib.axes._subplots.AxesSubplot at 0x7fd2c6773510>
 
 
-
-
-![png](Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_files/Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_12_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 7 - Outliers and Its impact on ML usecases_files/Feature Engineering 7 - Outliers and Its impact on ML usecases_12_1.png" alt="linearly separable data">
 
 
 
@@ -231,7 +240,7 @@ sns.distplot(df.Age.fillna(110))
 
 
 
-![png](Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_files/Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_13_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 7 - Outliers and Its impact on ML usecases_files/Feature Engineering 7 - Outliers and Its impact on ML usecases_13_1.png" alt="linearly separable data">
 
 
 * whenever my data follows normal distribution curve, at that time we use technique -> Estimate outliers (or ExtremevalueAnalysis) and we try to find IQR
@@ -257,7 +266,7 @@ figure.set_ylabel('Number of passengers')
 
 
 
-![png](Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_files/Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_16_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 7 - Outliers and Its impact on ML usecases_files/Feature Engineering 7 - Outliers and Its impact on ML usecases_16_1.png" alt="linearly separable data">
 
 
 
@@ -273,7 +282,7 @@ sns.boxplot('Age',data=df)
 
 
 
-![png](Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_files/Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_17_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 7 - Outliers and Its impact on ML usecases_files/Feature Engineering 7 - Outliers and Its impact on ML usecases_17_1.png" alt="linearly separable data">
 
 
 
@@ -296,7 +305,7 @@ df.Age.describe()
 
 
 
-#### Assuming "Age" follows Gaussian distribution 
+#### Assuming "Age" follows Gaussian distribution
 
 
 
@@ -344,7 +353,7 @@ df.Age[~df.Age.between(lower_bound_age,upper_bound_age)].hist()
 
 
 
-![png](Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_files/Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_25_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 7 - Outliers and Its impact on ML usecases_files/Feature Engineering 7 - Outliers and Its impact on ML usecases_25_1.png" alt="linearly separable data">
 
 
 * Below steps we usually follow for Skewed dataset but just how it looks in case of Normally dataset we are trying these
@@ -394,7 +403,7 @@ df.Age[~df.Age.between(lower_bridge,upper_bridge)].hist()
 
 
 
-![png](Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_files/Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_30_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 7 - Outliers and Its impact on ML usecases_files/Feature Engineering 7 - Outliers and Its impact on ML usecases_30_1.png" alt="linearly separable data">
 
 
 
@@ -437,7 +446,7 @@ figure.set_ylabel('Number of passengers')
 
 
 
-![png](Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_files/Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_35_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 7 - Outliers and Its impact on ML usecases_files/Feature Engineering 7 - Outliers and Its impact on ML usecases_35_1.png" alt="linearly separable data">
 
 
 
@@ -453,7 +462,7 @@ sns.boxplot('Fare',data=df)
 
 
 
-![png](Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_files/Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_36_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 7 - Outliers and Its impact on ML usecases_files/Feature Engineering 7 - Outliers and Its impact on ML usecases_36_1.png" alt="linearly separable data">
 
 
 
@@ -564,7 +573,7 @@ data.Age.hist(bins=50)
 
 
 
-![png](Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_files/Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_49_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 7 - Outliers and Its impact on ML usecases_files/Feature Engineering 7 - Outliers and Its impact on ML usecases_49_1.png" alt="linearly separable data">
 
 
 
@@ -580,7 +589,7 @@ data.Fare.hist(bins=50)
 
 
 
-![png](Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_files/Feature%20Engineering%207%20-%20Outliers%20and%20Its%20impact%20on%20ML%20usecases_50_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 7 - Outliers and Its impact on ML usecases_files/Feature Engineering 7 - Outliers and Its impact on ML usecases_50_1.png" alt="linearly separable data">
 
 
 
@@ -646,22 +655,22 @@ print("\n roc_auc_score:- \n",roc_auc_score(y_test,y_pred_1[:,1]))
     confusion_matrix:-
      [[157  11]
      [ 68  32]]
-    
-     classification_report:- 
+
+     classification_report:-
                    precision    recall  f1-score   support
-    
+
                0       0.70      0.93      0.80       168
                1       0.74      0.32      0.45       100
-    
+
         accuracy                           0.71       268
        macro avg       0.72      0.63      0.62       268
     weighted avg       0.72      0.71      0.67       268
-    
-    
-     accuracy_score:- 
+
+
+     accuracy_score:-
      0.7052238805970149
-    
-     roc_auc_score:- 
+
+     roc_auc_score:-
      0.7149404761904762
 
 
@@ -687,22 +696,22 @@ print("\n roc_auc_score:- \n",roc_auc_score(y_test,y_pred_1[:,1]))
     confusion_matrix:-
      [[134  34]
      [ 40  60]]
-    
-     classification_report:- 
+
+     classification_report:-
                    precision    recall  f1-score   support
-    
+
                0       0.77      0.80      0.78       168
                1       0.64      0.60      0.62       100
-    
+
         accuracy                           0.72       268
        macro avg       0.70      0.70      0.70       268
     weighted avg       0.72      0.72      0.72       268
-    
-    
-     accuracy_score:- 
+
+
+     accuracy_score:-
      0.7238805970149254
-    
-     roc_auc_score:- 
+
+     roc_auc_score:-
      0.7389880952380952
 
 
@@ -735,22 +744,22 @@ print("\n roc_auc_score:- \n",roc_auc_score(y_test,y_pred_1[:,1]))
     confusion_matrix:-
      [[161   7]
      [ 75  25]]
-    
-     classification_report:- 
+
+     classification_report:-
                    precision    recall  f1-score   support
-    
+
                0       0.68      0.96      0.80       168
                1       0.78      0.25      0.38       100
-    
+
         accuracy                           0.69       268
        macro avg       0.73      0.60      0.59       268
     weighted avg       0.72      0.69      0.64       268
-    
-    
-     accuracy_score:- 
+
+
+     accuracy_score:-
      0.6940298507462687
-    
-     roc_auc_score:- 
+
+     roc_auc_score:-
      0.71375
 
 
@@ -778,22 +787,22 @@ print("\n roc_auc_score:- \n",roc_auc_score(y_test,y_pred_1[:,1]))
     confusion_matrix:-
      [[134  34]
      [ 42  58]]
-    
-     classification_report:- 
+
+     classification_report:-
                    precision    recall  f1-score   support
-    
+
                0       0.76      0.80      0.78       168
                1       0.63      0.58      0.60       100
-    
+
         accuracy                           0.72       268
        macro avg       0.70      0.69      0.69       268
     weighted avg       0.71      0.72      0.71       268
-    
-    
-     accuracy_score:- 
+
+
+     accuracy_score:-
      0.7164179104477612
-    
-     roc_auc_score:- 
+
+     roc_auc_score:-
      0.7361011904761905
 
 

@@ -1,3 +1,15 @@
+---
+title: "Feature Engineering 3 - Handling Categorial Variable"
+date: 2021-04-07
+tags: [data science, Feature Engineering, messy data]
+header:
+  image: "/images/Feature_engineering.jpeg"
+excerpt: "Data Science, Feature Engineering, Messy Data"
+mathjax: "true"
+---
+
+
+
 # Handle Categorial Features
 
 ## 1. One Hot Encoding

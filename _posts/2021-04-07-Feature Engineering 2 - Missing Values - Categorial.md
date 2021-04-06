@@ -1,3 +1,14 @@
+---
+title: "Feature Engineering 2 - Missing values - Categorial"
+date: 2021-04-07
+tags: [data science, Feature Engineering, messy data]
+header:
+  image: "/images/Feature_engineering.jpeg"
+excerpt: "Data Science, Feature Engineering, Messy Data"
+mathjax: "true"
+---
+## Missing Values - Feature Engineering - Categorial Variable
+
 ```python
 import pandas as pd
 import numpy as np
@@ -407,8 +418,7 @@ df1.BsmtQual.value_counts().plot.bar()
 
 
 
-
-![png](Feature%20Engineering%202%20-%20Missing%20Values%20-%20Categorial_files/Feature%20Engineering%202%20-%20Missing%20Values%20-%20Categorial_14_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 2 - Missing Values - Categorial_files/Feature Engineering 2 - Missing Values - Categorial_14_1.png" alt="linearly separable data">
 
 
 
@@ -424,7 +434,7 @@ df1.GarageType.value_counts().plot.bar()
 
 
 
-![png](Feature%20Engineering%202%20-%20Missing%20Values%20-%20Categorial_files/Feature%20Engineering%202%20-%20Missing%20Values%20-%20Categorial_15_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 2 - Missing Values - Categorial_files/Feature Engineering 2 - Missing Values - Categorial_15_1.png" alt="linearly separable data">
 
 
 
@@ -440,7 +450,7 @@ df1.FireplaceQu.value_counts().plot.bar()
 
 
 
-![png](Feature%20Engineering%202%20-%20Missing%20Values%20-%20Categorial_files/Feature%20Engineering%202%20-%20Missing%20Values%20-%20Categorial_16_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 2 - Missing Values - Categorial_files/Feature Engineering 2 - Missing Values - Categorial_16_1.png" alt="linearly separable data">
 
 
 
@@ -472,7 +482,7 @@ df1.GarageType.value_counts().index[0]
 def impute_nan(df,variable):
     most_freq_cat=df[variable].value_counts().index[0] #most_freq_cat=df[variable].mode()[0]
     df[variable].fillna(most_freq_cat,inplace=True)
-    
+
 ```
 
 
@@ -627,7 +637,7 @@ df1.FireplaceQu.value_counts().plot.bar()
 
 
 
-![png](Feature%20Engineering%202%20-%20Missing%20Values%20-%20Categorial_files/Feature%20Engineering%202%20-%20Missing%20Values%20-%20Categorial_23_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 2 - Missing Values - Categorial_files/Feature Engineering 2 - Missing Values - Categorial_23_1.png" alt="linearly separable data">
 
 
 * As FireplaceQu has large missing values (~47%), imputing the same with mode might distort the relationship of FireplaceQu with other variable. So it is not a good practice to impute with mode in case where there is higher percentage of missing values
