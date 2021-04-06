@@ -919,8 +919,8 @@ ax.legend(lines,labels,loc='best')
 
 
 
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_32_1.png" alt="linearly separable data">
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_32_1.png)
 
 
 ### Advantages and disadvantages of Mean/Median imputations
@@ -1239,8 +1239,8 @@ ax.legend(lines,labels,loc='best')
 
 
 
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_44_1.png" alt="linearly separable data">
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_44_1.png)
 
 
 
@@ -1266,8 +1266,8 @@ ax.legend(lines,labels,loc='best')
 
 
 
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_46_1.png" alt="linearly separable data">
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_46_1.png)
 
 
 
@@ -1295,7 +1295,7 @@ ax.legend(lines,labels,loc='best')
 
 
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_48_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_48_1.png" alt="linearly separable data">
 
 
 #### Advantages
@@ -1743,7 +1743,7 @@ df4.Age.hist(bins=50)
 
 
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_61_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_61_1.png" alt="linearly separable data">
 
 
 
@@ -1785,7 +1785,7 @@ sns.boxplot('Age',data=df4)
 
 
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_64_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_64_1.png" alt="linearly separable data">
 
 
 + In this dataset we have only right side outliers, therefore we will impute the missing values from roght extremem values
@@ -2106,7 +2106,7 @@ ax.legend(lines,labels,loc='best')
 
 
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_72_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_72_1.png" alt="linearly separable data">
 
 
 
@@ -2122,7 +2122,7 @@ df4.Age.hist(bins=50)
 
 
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_73_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_73_1.png" alt="linearly separable data">
 
 
 
@@ -2138,7 +2138,7 @@ df4.Age_median.hist(bins=50)
 
 
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_74_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_74_1.png" alt="linearly separable data">
 
 
 
@@ -2154,7 +2154,7 @@ df4.Age_end_distribution.hist(bins=50)
 
 
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_75_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_75_1.png" alt="linearly separable data">
 
 
 
@@ -2170,7 +2170,7 @@ sns.boxplot('Age_end_distribution',data=df4)
 
 
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_76_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_76_1.png" alt="linearly separable data">
 
 
 * we can see that there is no more outliers after end of distribution imputation.
@@ -2277,7 +2277,7 @@ df5.Age.hist(bins=50)
 
 
 
-![png](Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_files/Feature%20Engineering%201%20-%20Missing%20Values%20-%20Numerical_82_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Feature Engineering 1 - Missing Values - Numerical_files/Feature Engineering 1 - Missing Values - Numerical_82_1.png" alt="linearly separable data">
 
 
 ##### Arbitrary values :-
