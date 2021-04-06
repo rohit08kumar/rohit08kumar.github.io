@@ -85,10 +85,10 @@ analytics:
 # Site Author
 author:
   name             : "Rohit Kumar"
-  avatar           : "/images/bio-pic-2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/Display_pic.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Science Portfolio"
   location         : "New Delhi, India"
-  email            :
+  email            : "mail.rohit.kmr@gmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
