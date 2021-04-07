@@ -2434,10 +2434,6 @@ df5
 2. If missingness is not important, it may mask the predictive power of the original variable by distorting its distribution.
 3. Hard to decide which value to use
 
-# How to handle categorial missing values
-
-## 1. Frequent categories imputation
-
 
 ```python
 
