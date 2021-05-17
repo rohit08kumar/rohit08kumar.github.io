@@ -1,3 +1,14 @@
+---
+title: "Python Pandas - Joining and merging DataFrame"
+date: 2021-05-17
+tags: [Data Science, Pandas, Python Learning]
+header:
+  image: "/images/Feature_engineering.jpeg"
+excerpt: "Data Science, Pandas, Python Learning"
+mathjax: "true"
+---
+
+
 # Exercise - Pandas Joining and merging DataFrame
 
 
@@ -6,18 +17,18 @@ import pandas as pd
 import numpy as np
 ```
 
-1. Write a Pandas program to join the two given dataframes along rows and assign all data. 
+1. Write a Pandas program to join the two given dataframes along rows and assign all data.
 
 
 ```python
 df1_1 = pd.DataFrame({
         'student_id': ['S1', 'S2', 'S3', 'S4', 'S5'],
-         'name': ['Danniella Fenton', 'Ryder Storey', 'Bryce Jensen', 'Ed Bernal', 'Kwame Morin'], 
+         'name': ['Danniella Fenton', 'Ryder Storey', 'Bryce Jensen', 'Ed Bernal', 'Kwame Morin'],
         'marks': [200, 210, 190, 222, 199]})
 
 df1_2 = pd.DataFrame({
         'student_id': ['S4', 'S5', 'S6', 'S7', 'S8'],
-        'name': ['Scarlette Fisher', 'Carla Williamson', 'Dante Morse', 'Kaiser William', 'Madeeha Preston'], 
+        'name': ['Scarlette Fisher', 'Carla Williamson', 'Dante Morse', 'Kaiser William', 'Madeeha Preston'],
         'marks': [201, 200, 198, 219, 201]})
 ```
 
@@ -397,17 +408,17 @@ df1_1.append(d4,ignore_index=True)
 
 
 
-5. Write a Pandas program to join the two given dataframes along rows and merge with another dataframe along the common column id. 
+5. Write a Pandas program to join the two given dataframes along rows and merge with another dataframe along the common column id.
 
 
 ```python
 df5_1 = pd.DataFrame({
         'student_id': ['S1', 'S2', 'S3', 'S4', 'S5'],
-         'name': ['Danniella Fenton', 'Ryder Storey', 'Bryce Jensen', 'Ed Bernal', 'Kwame Morin'], 
+         'name': ['Danniella Fenton', 'Ryder Storey', 'Bryce Jensen', 'Ed Bernal', 'Kwame Morin'],
         'marks': [200, 210, 190, 222, 199]})
 df5_2 = pd.DataFrame({
         'student_id': ['S4', 'S5', 'S6', 'S7', 'S8'],
-        'name': ['Scarlette Fisher', 'Carla Williamson', 'Dante Morse', 'Kaiser William', 'Madeeha Preston'], 
+        'name': ['Scarlette Fisher', 'Carla Williamson', 'Dante Morse', 'Kaiser William', 'Madeeha Preston'],
         'marks': [201, 200, 198, 219, 201]})
 
 df5_3 = pd.DataFrame({
@@ -736,7 +747,7 @@ df5_1.merge(df5_2,how='outer',on='student_id')
 d8_1 = pd.DataFrame({'key1': ['K0', 'K0', 'K1', 'K2'],
                      'key2': ['K0', 'K1', 'K0', 'K1'],
                      'P': ['P0', 'P1', 'P2', 'P3'],
-                     'Q': ['Q0', 'Q1', 'Q2', 'Q3']}) 
+                     'Q': ['Q0', 'Q1', 'Q2', 'Q3']})
 d8_2 = pd.DataFrame({'key1': ['K0', 'K1', 'K1', 'K2'],
                       'key2': ['K0', 'K0', 'K0', 'K0'],
                       'R': ['R0', 'R1', 'R2', 'R3'],
@@ -1056,7 +1067,7 @@ pd.concat([s11_1,s11_2,s11_3],axis=1,keys=['Column1','Columns2','Column3'])
 df12_1 = pd.DataFrame({'key1': ['K0', 'K0', 'K1', 'K2'],
                      'key2': ['K0', 'K1', 'K0', 'K1'],
                      'P': ['P0', 'P1', 'P2', 'P3'],
-                     'Q': ['Q0', 'Q1', 'Q2', 'Q3']}) 
+                     'Q': ['Q0', 'Q1', 'Q2', 'Q3']})
 df12_2 = pd.DataFrame({'key1': ['K0', 'K1', 'K1', 'K2'],
                       'key2': ['K0', 'K0', 'K0', 'K0'],
                       'R': ['R0', 'R1', 'R2', 'R3'],
@@ -1242,7 +1253,7 @@ df13_1.join(df13_2,how='outer')
 df14_1 = pd.DataFrame({'key1': ['K0', 'K0', 'K1', 'K2'],
                      'key2': ['K0', 'K1', 'K0', 'K1'],
                      'P': ['P0', 'P1', 'P2', 'P3'],
-                     'Q': ['Q0', 'Q1', 'Q2', 'Q3']}) 
+                     'Q': ['Q0', 'Q1', 'Q2', 'Q3']})
 df14_2 = pd.DataFrame({'key1': ['K0', 'K1', 'K1', 'K2'],
                       'key2': ['K0', 'K0', 'K0', 'K0'],
                       'R': ['R0', 'R1', 'R2', 'R3'],
@@ -1419,5 +1430,3 @@ df15_1.combine_first(df15_2)
   </tbody>
 </table>
 </div>
-
-

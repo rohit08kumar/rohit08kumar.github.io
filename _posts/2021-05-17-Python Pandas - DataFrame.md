@@ -1,3 +1,13 @@
+---
+title: "Python Pandas - DataFrame"
+date: 2021-05-17
+tags: [Data Science, Pandas, Python Learning]
+header:
+  image: "/images/Feature_engineering.jpeg"
+excerpt: "Data Science, Pandas, Python Learning"
+mathjax: "true"
+---
+
 # Exercise - Python Pandas DataFrame
 
 
@@ -542,7 +552,7 @@ df2.columns
 print("Number of rows : {} \nNumber of columns : {}".format(df2.shape[0],df2.shape[1]))
 ```
 
-    Number of rows : 10 
+    Number of rows : 10
     Number of columns : 4
 
 
@@ -551,7 +561,7 @@ print("Number of rows : {} \nNumber of columns : {}".format(df2.shape[0],df2.sha
 print("Number of rows : {} \nNumber of columns : {}".format(len(df2),len(df2.columns)))
 ```
 
-    Number of rows : 10 
+    Number of rows : 10
     Number of columns : 4
 
 
@@ -720,7 +730,7 @@ df2[(df2.attempts<2) & (df2.score>15)]
 
 
 
-12. Write a Pandas program to change the score in row 'd' to 11.5. 
+12. Write a Pandas program to change the score in row 'd' to 11.5.
 
 
 ```python
@@ -762,7 +772,7 @@ df2.attempts.sum()
 
 
 
-14. Write a Pandas program to calculate the mean score for each different student in DataFrame. 
+14. Write a Pandas program to calculate the mean score for each different student in DataFrame.
 
 
 ```python
@@ -776,7 +786,7 @@ df2.score.mean()
 
 
 
-15. Write a Pandas program to append a new row 'k' to data frame with given values for each column. Now delete the new row and return the original DataFrame. 
+15. Write a Pandas program to append a new row 'k' to data frame with given values for each column. Now delete the new row and return the original DataFrame.
 
 
 ```python
@@ -1253,7 +1263,7 @@ df18
 
 
 
-19. Write a Pandas program to delete the 'attempts' column from the DataFrame. 
+19. Write a Pandas program to delete the 'attempts' column from the DataFrame.
 
 
 ```python
@@ -1774,7 +1784,7 @@ df24[df24.col1==4]
 
 
 
-25. Write a Pandas program to change the order of a DataFrame columns. 
+25. Write a Pandas program to change the order of a DataFrame columns.
 
 
 ```python
@@ -2792,9 +2802,9 @@ df34=df2.copy()
 df34.loc['i',:].score=10.2
 ```
 
-    C:\Users\a112471\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\generic.py:5208: SettingWithCopyWarning: 
+    C:\Users\a112471\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\generic.py:5208: SettingWithCopyWarning:
     A value is trying to be set on a copy of a slice from a DataFrame
-    
+
     See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
       self[name] = value
 
@@ -4004,7 +4014,7 @@ pd.to_datetime(s41)
 
 
 
-42. Write a Pandas program to rename a specific column name in a given DataFrame. 
+42. Write a Pandas program to rename a specific column name in a given DataFrame.
 
 
 ```python
@@ -4320,7 +4330,7 @@ else:
     Col4 not present in DataFrame
 
 
-47. Write a Pandas program to get the specified row value of a given DataFrame. 
+47. Write a Pandas program to get the specified row value of a given DataFrame.
 
 
 ```python
@@ -4337,7 +4347,7 @@ df45.iloc[0]
 
 
 
-48. Write a Pandas program to get the datatypes of columns of a DataFrame. 
+48. Write a Pandas program to get the datatypes of columns of a DataFrame.
 
 
 ```python
@@ -4355,7 +4365,7 @@ df2.dtypes
 
 
 
-49. Write a Pandas program to append data to an empty DataFrame. 
+49. Write a Pandas program to append data to an empty DataFrame.
 
 
 ```python
@@ -4982,7 +4992,7 @@ df45.columns.get_loc('col2')
 
 
 
-57. Write a Pandas program to count number of columns of a DataFrame. 
+57. Write a Pandas program to count number of columns of a DataFrame.
 
 
 ```python
@@ -5558,7 +5568,7 @@ df61.nlargest(3,'col3')
 
 
 
-62. Write a Pandas program to remove first n rows of a given DataFrame. 
+62. Write a Pandas program to remove first n rows of a given DataFrame.
 
 
 ```python
@@ -6093,7 +6103,7 @@ df64.add_suffix('_1')
 
 
 
-65. Write a Pandas program to reverse order (rows, columns) of a given DataFrame. 
+65. Write a Pandas program to reverse order (rows, columns) of a given DataFrame.
 
 
 ```python
@@ -9169,7 +9179,7 @@ pd.factorize(df77.Name)
 
 
 
-78. Write a Pandas program to replace the current value in a dataframe column based on last largest value. If the current value is less than last largest value replaces the value with 0. 
+78. Write a Pandas program to replace the current value in a dataframe column based on last largest value. If the current value is less than last largest value replaces the value with 0.
 
 
 ```python
@@ -9371,7 +9381,7 @@ df80_2 = pd.DataFrame({'W':[78,75,86,80,None],'X':[78,85,96,80,76], 'Y':[84,84,8
 
 
 ```python
-df80_1!=df80_2 
+df80_1!=df80_2
 #~(df80_1==df80_2)
 #df80_1.ne(df80_2)
 ```

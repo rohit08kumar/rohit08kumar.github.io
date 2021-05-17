@@ -1,3 +1,14 @@
+---
+title: "Python Pandas - String and Regular Expression"
+date: 2021-05-17
+tags: [Data Science, Pandas, Python Learning]
+header:
+  image: "/images/Feature_engineering.jpeg"
+excerpt: "Data Science, Pandas, Python Learning"
+mathjax: "true"
+---
+
+
 # Exercise - Pandas String and Regular Expression
 
 
@@ -395,7 +406,7 @@ df6['count']=df6.name_code.apply(lambda x:x.count('2'))
 df6
 ```
 
-    
+
     Count occurrence of 2 in name_code column:
 
 
@@ -487,7 +498,7 @@ df7['Occur_22']=df7.name_code.apply(lambda x: 'Not Available' if x.find('22')==-
 df7
 ```
 
-    
+
     Count occurrence of 22 in name_code column:
 
 
@@ -1715,7 +1726,7 @@ df20
 
 
 
-21. Write a Pandas program to replace arbitrary values with other values in a given DataFrame. 
+21. Write a Pandas program to replace arbitrary values with other values in a given DataFrame.
 
 
 ```python
@@ -1795,7 +1806,7 @@ df21.replace('A','C')
 
 
 
-22. Write a Pandas program to replace more than one value with other values in a given DataFrame. 
+22. Write a Pandas program to replace more than one value with other values in a given DataFrame.
 
 
 ```python
@@ -2114,7 +2125,7 @@ df24
 
 
 
-25. Write a Pandas program to extract hash attached word from twitter text from the specified column of a given DataFrame. 
+25. Write a Pandas program to extract hash attached word from twitter text from the specified column of a given DataFrame.
 
 
 ```python
@@ -2186,7 +2197,7 @@ df25
 
 
 
-26. Write a Pandas program to extract word mention someone in tweets using @ from the specified column of a given DataFrame. 
+26. Write a Pandas program to extract word mention someone in tweets using @ from the specified column of a given DataFrame.
 
 
 ```python
@@ -2258,7 +2269,7 @@ df26
 
 
 
-27. Write a Pandas program to extract only number from the specified column of a given DataFrame. 
+27. Write a Pandas program to extract only number from the specified column of a given DataFrame.
 
 
 ```python
@@ -2773,7 +2784,7 @@ def rep_char(str1):
     if len(tchr) > 1:
         return tchr[0:1] # can change the value here on repetition
 def unique_char(rep, sent_text):
-    convert = re.sub(r'(\w)\1+', rep, sent_text) 
+    convert = re.sub(r'(\w)\1+', rep, sent_text)
     return convert
 df32['normal_text']=df32['text_lang'].apply(lambda x : unique_char(rep_char,x))
 df32
@@ -2836,7 +2847,7 @@ df32
 
 
 
-33. Write a Pandas program to extract numbers greater than 940 from the specified column of a given DataFrame. 
+33. Write a Pandas program to extract numbers greater than 940 from the specified column of a given DataFrame.
 
 
 ```python
@@ -3052,7 +3063,7 @@ df34
 
 
 
-35. Write a Pandas program to check whether two given words present in a specified column of a given DataFrame. 
+35. Write a Pandas program to check whether two given words present in a specified column of a given DataFrame.
 
 
 ```python
@@ -3131,7 +3142,7 @@ df35
 
 
 
-36. Write a Pandas program to extract valid date (format: mm-dd-yyyy) from a given column of a given DataFrame. 
+36. Write a Pandas program to extract valid date (format: mm-dd-yyyy) from a given column of a given DataFrame.
 
 
 ```python
@@ -3217,7 +3228,7 @@ df36
 
 
 
-37. Write a Pandas program to extract only words from a given column of a given DataFrame. 
+37. Write a Pandas program to extract only words from a given column of a given DataFrame.
 
 
 ```python
@@ -3750,5 +3761,3 @@ df41
   </tbody>
 </table>
 </div>
-
-
